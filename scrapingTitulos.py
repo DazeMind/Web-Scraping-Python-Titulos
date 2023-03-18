@@ -23,7 +23,9 @@ sin_duplicados = list(set(maquinas_repetidas))
 #filtra los nombres de las maquinas y quita las lineas
 maquinas_final = []
 
+print("------------------------------")
 for i in sin_duplicados:
     nombre_maquinas = i.replace("/entry/", "") #elimina donde haya un /entry/ y quitalo
     maquinas_final.append(nombre_maquinas) #hace un push al array con los nombres limpios
-    print(nombre_maquinas)#POR CADA VUELTA IMPRIMIRA EL NOMBRE
+    print("| " + nombre_maquinas )#POR CADA VUELTA IMPRIMIRA EL NOMBRE
+print("------------------------------")
